@@ -13,8 +13,14 @@ public class Question5 {
             }
             else{fibonacciArray[i] = fibonacciArray[i-1] + fibonacciArray[i-2];}
         }
-        for (Integer fibs : fibonacciArray) {
-            System.out.print(fibs + " ");
+//         for (Integer fibs : fibonacciArray) {
+//             System.out.print(fibs + " ");
+//         }
+        for (int i = 0; i < size; i++) {
+            System.out.print(fibonacciArray[i]);
+            if(i != size-1){
+            System.out.print(", ");
+            }
         }
     }
 }
